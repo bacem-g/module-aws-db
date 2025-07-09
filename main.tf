@@ -41,7 +41,7 @@ resource "aws_db_instance" "mysql-db" {
   storage_type      = "gp2"
   engine            = "mysql"
   engine_version    = "5.7"
-  instance_class    = "db.t2.micro"
+  instance_class    = "db.t3.micro"  # Updated instance class
   name              = var.mysql_database
   identifier        = "microservices-mysql"
 
